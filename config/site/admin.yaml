@@ -1,0 +1,4 @@
+menu:
+    pages:
+        route: admin_page_list
+        label: Liste des pages

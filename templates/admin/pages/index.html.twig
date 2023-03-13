@@ -1,0 +1,20 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block body %}
+    <div class="list-actions">
+        <div class="admin-actions-links">
+            <a href="{{ path('admin_page_new') }}">Créer une nouvelle page</a>
+        </div>
+    </div>
+
+    <ul class="list-elements page-list">
+        {% for page in pages %}
+            <li>
+                <h2>{{ page.title }}</h2>
+                <div class="list-element-action">
+                    <a href="{{ path('admin_page_edit', {id: page.id}) }}">Éditer</a>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

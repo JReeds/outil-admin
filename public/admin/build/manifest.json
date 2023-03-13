@@ -1,0 +1,9 @@
+{
+  "admin/build/app.css": "/admin/build/app.css",
+  "admin/build/app.js": "/admin/build/app.js",
+  "admin/build/pagesList.js": "/admin/build/pagesList.js",
+  "admin/build/pagesEdit.css": "/admin/build/pagesEdit.css",
+  "admin/build/pagesEdit.js": "/admin/build/pagesEdit.js",
+  "admin/build/runtime.js": "/admin/build/runtime.js",
+  "admin/build/vendors-node_modules_core-js_modules_es_array_for-each_js-node_modules_core-js_modules_es_dat-db952a.js": "/admin/build/vendors-node_modules_core-js_modules_es_array_for-each_js-node_modules_core-js_modules_es_dat-db952a.js"
+}

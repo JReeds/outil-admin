@@ -1,0 +1,7 @@
+<nav>
+    <ul>
+        {% for menu in AdminManager.getMainMenu %}
+            <li><a href="{{ path(menu.route) }}">{{ menu.label }}</a></li>
+        {% endfor %}
+    </ul>
+</nav>

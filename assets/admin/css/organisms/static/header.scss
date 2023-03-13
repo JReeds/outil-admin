@@ -1,0 +1,14 @@
+header {
+    height: 80px;
+    display: flex;
+    position: static;
+    padding: 0 40px;
+    background-color: $backPrim;
+    align-items: center;
+
+    a {
+        font-size: 27px;
+        text-decoration: none;
+        color: $textPrim;
+    }
+}

@@ -1,0 +1,37 @@
+.edit-container {
+    height: 100%;
+    padding: 0 40px;
+
+    h1 {
+        display: flex;
+        margin: 0;
+        padding: 20px 0;
+        font-size: 27px;
+    }
+}
+
+div.edit-form {
+    display: flex;
+    flex-direction: row-reverse;
+
+    .right_col {
+        width: 320px;
+        padding: 20px;
+        border-left: 2px solid $backSec;
+    }
+
+    .content_col {
+        width: calc(100% - 240px);
+
+        /**
+        * @TODO revoir inte items
+         */
+        &>div>div {
+            margin-bottom: 30px;
+
+            div {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

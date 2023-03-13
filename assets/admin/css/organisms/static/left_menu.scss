@@ -1,0 +1,16 @@
+.menu {
+    padding: 30px 20px;
+    background-color: $backSec;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    a {
+        color: $textPrim;
+        font-weight: 700;
+        text-decoration: none;
+    }
+}

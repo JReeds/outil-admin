@@ -22,3 +22,14 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    # Add admin configuration
+    App\Service\AdminManager:
+        class: App\Service\AdminManager
+        arguments: ['@App\Config\ConfigLoader', '../config/site/admin.yaml']
+
+    # Listen entity events
+    App\Listener\EntityListener:
+        tags:
+            - { name: doctrine.event_listener, event: prePersist }
+            - { name: doctrine.event_listener, event: preUpdate }

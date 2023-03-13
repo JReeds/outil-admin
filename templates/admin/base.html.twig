@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app', null, 'adminConfig') }}
+        {% endblock %}
+    </head>
+    <body>
+        <header>
+            {% block header %}
+                {% include 'admin/static/header.html.twig' %}
+            {% endblock %}
+        </header>
+
+        <div class="body-container">
+            <div class="menu">
+                {% block leftCol %}
+                    {% include 'admin/static/left_col.html.twig' %}
+                {% endblock %}
+            </div>
+
+            <div class="content">
+                {% block body %}{% endblock %}
+            </div>
+        </div>
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app', null, 'adminConfig') }}
+        {% endblock %}
+    </body>
+</html>
